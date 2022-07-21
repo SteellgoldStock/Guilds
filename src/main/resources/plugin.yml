@@ -7,3 +7,5 @@ main: fr.steellgold.epicquests.Guild
 commands:
   guild:
     description: Créer une guilde
+    aliases:
+      - g
