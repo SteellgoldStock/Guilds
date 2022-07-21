@@ -1,0 +1,9 @@
+name: Guilds
+version: ${project.version}
+description: flemme
+author: Steellgold
+main: fr.steellgold.epicquests.Guild
+
+commands:
+  guild:
+    description: Créer une guilde
