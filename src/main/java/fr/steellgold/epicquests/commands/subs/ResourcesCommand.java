@@ -1,6 +1,7 @@
 package fr.steellgold.epicquests.commands.subs;
 
 import fr.steellgold.epicquests.commands.SubCommand;
+import fr.steellgold.epicquests.manager.PlayerManager;
 import fr.steellgold.epicquests.session.Session;
 import fr.steellgold.epicquests.utils.ColorUtil;
 import org.bukkit.entity.Player;
@@ -25,9 +26,9 @@ public class ResourcesCommand extends SubCommand {
 
     @Override
     public void perform(Player player, String[] args) {
-        Session
+        Session session = PlayerManager.getSession(player);
 
-        ColorUtil.sendMessage(player,"Vous avez ");
+        ColorUtil.sendMessage(player,"Vous avez " + session.getWood() + " bois", ColorUtil.PREFIX);
     }
 
     @Override
